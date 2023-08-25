@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pynapple as nap
 import pandas as pd
-import circstats
 
 def load_nex(files, raw_data_path, subject_ids, groups):
 
