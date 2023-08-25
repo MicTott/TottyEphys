@@ -1,4 +1,4 @@
-from .io import load_nex
+from .io import load_nex, analyze_neurons
 from .visualize import plot_autocorrelations, plot_peth
 from setuptools import setup, find_packages
 
