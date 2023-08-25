@@ -54,7 +54,7 @@ def plot_peth(tsg, start_tsd, minmax, bin_size, save, save_dir, time_units='s'):
         for stim_index in peth[unit].keys():
             plt.plot(peth[unit][stim_index].as_units('s').fillna(stim_index), '|', markersize=5, color='k')
            
-        plt.xlim(-2.5, 7.5)
+        plt.xlim(minmax[0], minmax[1])
         plt.xticks(np.arange(0, 6, 5.0), fontsize = 50)
         plt.yticks(fontsize = 50)
         #plt.axvline(0, color='k', linestyle="--")
@@ -71,7 +71,7 @@ def plot_peth(tsg, start_tsd, minmax, bin_size, save, save_dir, time_units='s'):
         plt.plot(peth_average, label=tsg.get_info('group')[unit], color='k')
         
         
-        plt.xlim(-2.5, 7.5)
+        plt.xlim(minmax[0], minmax[1])
         plt.xticks(np.arange(0, 6, 5.0), fontsize = 50)
         plt.yticks(fontsize = 50)
         #plt.axvline(0, color='k', linestyle="--")
