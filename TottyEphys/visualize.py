@@ -86,6 +86,6 @@ def plot_peth(tsg, start_tsd, minmax, bin_size, save, save_dir, time_units='s'):
             save_rat = tsg.get_info('rat_id')[unit]
             save_unit = tsg.get_info('unit_id')[unit]
             
-            plt.savefig(str(save_dir)+'/' +'PETHs_'+save_group+'_'+save_rat+'_'+save_unit+'.svg',dpi=300)
+            plt.savefig(str(save_dir)+'/' +'PETHs_'+save_group+'_'+save_rat+'_'+save_unit+'.pdf',dpi=300)
         
     return peth, average_peths
